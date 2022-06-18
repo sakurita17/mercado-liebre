@@ -1,7 +1,7 @@
 {
   "name": "mercado-liebre",
   "version": "1.0.0",
-  "main": "source/index.js",
+  "main": "index.js",
   "scripts": {
     "start": "node source/index.js"
   },
@@ -12,5 +12,13 @@
   },
   "devDependencies": {},
   "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sakurita17/mercado-liebre.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sakurita17/mercado-liebre/issues"
+  },
+  "homepage": "https://github.com/sakurita17/mercado-liebre#readme",
   "description": ""
 }
