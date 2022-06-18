@@ -1,1 +1,1 @@
-web: node source/index.js
+web: node source/index.js exec thin start -p $PORT

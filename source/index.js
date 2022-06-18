@@ -17,7 +17,6 @@ const ofertas = (req,res) => res.sendFile(path.resolve(__dirname, './views','ofe
 const vender = (req,res) => res.sendFile(path.resolve(__dirname, './views','vender.html'));
 const tiendasOficiales = (req,res) => res.sendFile(path.resolve(__dirname, './views','tiendasOficiales.html'));
 
-
 app.get('/', home)
 app.get('/login', login)
 app.get('/register', register)
