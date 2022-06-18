@@ -6,7 +6,8 @@ const port = process.env.PORT || 2020;
 const callback = () => console.log("Server started in port " + port);
 app.listen(process.env.port  || 2020, callback);
 
-"app.use(express.static(public));"
+const public = path.resolve(__dirname, '../public');
+app.use(express.static(public));
 
 const home = (req,res) => res.sendFile(path.resolve(__dirname, './views','home.html'));
 const login = (req,res) => res.sendFile(path.resolve(__dirname, './views','login.html'));
