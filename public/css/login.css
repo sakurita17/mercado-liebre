@@ -1,0 +1,58 @@
+main{
+    display: block;
+    background-color: rgba(0,0,0,.1);
+}
+
+.center-title{
+    text-align: center;
+}
+
+main form {
+    display:block;
+    padding: 20px 50px;
+    margin: auto;
+    background-color:  #ebebeb
+}
+
+main form fieldset{
+    display:block;
+    border: none
+}
+main form fieldset input{
+    display:block;
+    width: 100%;
+    border: none;
+    margin-bottom:20px;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+main form fieldset button{
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    height: 50%;
+    background-color: #003f88
+}
+main form fieldset button a{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+main form fieldset div .conditions{
+    align-items: center;
+}
+
+@media (min-width:768px){
+    main form {
+        width: 500px
+    }
+}
+
+@media (min-width:1024px){
+    main form {
+        width: 700px
+    }
+}
+

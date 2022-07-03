@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,20 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 
- <!----
-    <link rel="stylesheet" href="/styles/header.css">
-    <link rel="stylesheet" href="/styles/header-tablet.css">
-    <link rel="stylesheet" href="/styles/header-desktop.css">
-    <link rel="stylesheet" href="/styles/footer.css">
-    <link rel="stylesheet" href="/styles/footer-tablet.css">
-    <link rel="stylesheet" href="/styles/footer-desktop.css">
-    <link rel="stylesheet" href="/styles/home.css">
-    <link rel="stylesheet" href="/styles/home-tablet.css">
-    <link rel="stylesheet" href="/styles/home-desktop.css"> 
---->
-
     <link rel="stylesheet" href="/css/styles.css">
-
+    <link rel="stylesheet" href="/css/login.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -31,65 +21,72 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <section id="header-top">
-            <nav id="logo">
+    <header>
+        <section class="header-top">
+            <nav class="logo">
                 <a href="">
                     <img src="../images/logo-mercado-liebre.svg" alt="logo-mercadoliebre">
                 </a>
             </nav>
-            <form action="/" method="get" id="search-form">
+            <form action="/" method="get" class="nav-search">
                 <fieldset>
-                    <input type="text" id="search-field" name="search">
-                    <button>
+                    <input type="text" class="nav-search-input" placeholder="Buscar productos, marcas y más..." name="search">
+                    <button typpe="submit" class="nav-search-btn">
                         <i class="fa fa-search" aria-hidden="true"></i>
                     </button>
                 </fieldset>
             </form>
-            <article>
-                <i class="fas fa-handling-usd"></i>
-                <p>Compra en cuotas y sin tarjetas de crédito</p>
-            </article>
+            <h2 class="copy">
+                <i class="fas fa-hand-holding-usd"></i>
+                Compra en cuotas y sin tarjeta de crédito
+            </h2>
         </section>
- 
-        <section id="header-bottom">
-            <nav id="us">
-                <a href="/">Home</a>
-                <a href="/">Ofertas</a>
-                <a href="/">Tiendas oficiales</a>
-                <a href="/">Vender</a>
-                <a href="/">Ayuda</a>
-            </nav>
-            <nav>
-                <a href="/register">Crea tu cuenta <i class="far fa-id-card"></i></a>
-                <a href="/login"> Ingresa<i class="fas fa-sign-in-alt"></i></a>
-                <a href="/">Mis compras <i class="fas fa-shopping-basket"></i></a>
+         <section id="header-bottom">
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/ofertas">Ofertas</a></li>
+                    <li><a href="/tiendasOficiales">Tiendas oficiales</a></li>
+                    <li><a href="/vender">Vender</a></li>
+                    <li><a href="/ayuda">Ayuda</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/register">Crea tu cuenta <i class="far fa-id-card"></i></a></li>
+                    <li><a href="/login"> Ingresa<i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="/">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                </ul>
             </nav>
         </section>
+        
+        <div class="burger-btn">
+            <i class="fa fa-bars burger"></i>
+        </div>
     </header>
-
-    <main class="login">
-        <form action="" method="post">
-            <div class="profile">
-                <input type="text" name="profile" placeholder="user-name" 
-                    minlength="6"
-                    required pattern="[Aa-Zz] {2,15}"
-                    title="Debe introducir como mínimo 6 caracter"
-                    required>
-            </div>
-            <div class="profile">
-                <input type="password" name="password" placeholder="Contraseña" 
-                    minlength="6"
-                    required pattern="[Aa-Zz] {2,15}"
-                    title="Debe introducir como mínimo 6 caracter"
-                    required>
-            </div>
-            <div>
-                <button type="submit"><a href="/">Enviar</a></button>
-            </div>
+     
+    <main>
+        <h1 class="center-title">Hola! Ingresa tu teléfono, e-amil o usuario</h1>
+        <form action="/" method="post">
+            <fieldset class="login-form">
+                <label>
+                    <span class="control-label">Teléfono, email o usuario</span>
+                    <div class="form-control-control">
+                        <input type="email">
+                    </div>
+                    <span class="control-password">Contraseña</span>
+                    <div class="form-control-password">
+                        <input type="password" id="pass" name="password"
+                        minlength="8" required>
+                    </div>
+                </label>
+                <div class="login-actions">
+                    <button type="submit">
+                        <span class="btn-content">Continuar</span>
+                    </button>
+                </div>
+            </fieldset>
         </form>
     </main>
-    
+
     <footer>
         <article>
             <i class="fas fa-credit-card"></i>
@@ -106,11 +103,10 @@
             <h4>Seguridad de principio a fin</h4>
             <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@</p>
         </article>
-        <article>
+        <article class="copyright">
             <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
         </article>
     </footer>
-
 </body>
 
 </html>
