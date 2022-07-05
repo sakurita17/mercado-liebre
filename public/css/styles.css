@@ -260,7 +260,7 @@ article{
 }
 
 article img {
-    max-width: 90vw;
+    max-width: 100%;
     margin: 0;
     flex-basis:100%
 }
@@ -326,6 +326,27 @@ article div {
         margin: 0;
         flex-basis:100%
     }
+
+    main section article div i{
+        color:#39b54a;
+        display: block;
+        font-size: 18px;
+        padding: 14px;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position:absolute;
+        right: 15px;
+        top: -25px;
+        transform: none;
+        transition: transform 500ms
+    }
+    main section article div i:hover{
+        transform: rotate(270deg)
+    }
+    
     .name{
         display: block
     }
