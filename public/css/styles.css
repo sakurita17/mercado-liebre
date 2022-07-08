@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-size: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -232,8 +232,9 @@ main {
     background-color: #ebebeb;
     padding-bottom:10px
 }
-.banner{
-    max-width: 100%;
+.banner img{
+    width: 100%;
+    margin: 0;
 }
 
 main section {
